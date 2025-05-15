@@ -1,0 +1,15 @@
+URL: https://github.com/Midoirl/DI-BOOTCAMP2025/blob/main/Mini_project_tictactoe.py
+suggestions for improvement:
+- Improve error handling for invalid input types (non-integers).
+- Consolidate `player_input_player1` and `player_input_player2` into a single function to reduce redundancy.
+- Add a clear game start message explaining the rules.
+- Enhance the `display_board` function to include row and column numbers for better user experience.
+- Add more comprehensive comments to clarify the logic, especially within the loop in the `play` function.
+- Consider using a more descriptive variable name instead of `game_board` (e.g., `ticTacToeBoard`).
+- The `check_if_tie` function can be simplified.  It currently checks for a win twice.  After the first loop has checked all cells, a tie is implied.
+Brief justification:
+- correctness: The code correctly implements the core Tic Tac Toe game logic.  It handles player input, updates the board, checks for wins and ties, and displays the board.  The win conditions (rows, columns, diagonals) are all correctly checked. However, it lacks robust input validation against non-integer inputs.  The score reflects this near-complete implementation with a minor weakness in input validation.
+- readability: The code is mostly readable, with functions separated by steps as described in the chapter content. However,  the two `player_input` functions are nearly identical, creating unnecessary redundancy.  More descriptive variable names and comments would greatly enhance readability. The inline comments are helpful, but additional contextual comments would improve understanding, especially within the main game loop.
+- performance: The code's performance is adequate for this small-scale game.  No significant performance issues are apparent. The algorithms used for checking wins and ties are efficient.
+- security: The code doesn't have any obvious security vulnerabilities as it's a self-contained game with no external data sources or user-provided code execution.
+
