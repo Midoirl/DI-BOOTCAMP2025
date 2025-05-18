@@ -1,0 +1,10 @@
+URL: https://github.com/Midoirl/DI-BOOTCAMP2025/blob/main/D4_EX_XP.py
+suggestions for improvement:
+- In Exercise 6, the `make_great` function creates a *new* list instead of modifying the original list in place, as the instructions suggest.  The instructions explicitly state that the function should modify the original list.  Consider modifying the list in place using list indexing or methods like `list.insert()`.
+- In Exercise 7, while the code handles temperature advice correctly, the bonus section about handling seasons based on user input is missing. The `get_random_temp` function does not take a `season` parameter, nor is there user input or seasonal logic.
+Brief justification:
+- correctness: Exercises 1-5 and Exercise 7 (excluding the bonus) are implemented correctly, accurately following the specifications provided.  Exercise 6 is mostly correct but deviates from the requirement of modifying the original list in place. Exercise 7 is missing the bonus requirements about seasonal temperatures.
+- readability: The code is generally readable with good use of f-strings.  However, some comments could be improved for clarity and conciseness.  The variable names are good and follow standard Python conventions.
+- performance: The code has no performance issues. All algorithms have linear time complexity, which is optimal for these simple tasks. The use of list comprehensions in Exercise 6 is efficient.
+- security: No security concerns are present in this code since it doesn't involve external inputs or data processing that could be vulnerable to attacks.
+
