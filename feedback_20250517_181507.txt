@@ -1,0 +1,12 @@
+URL: https://github.com/Midoirl/DI-BOOTCAMP2025/blob/main/mini_project_daily_challenge.py
+suggestions for improvement:
+- Challenge 1: The code correctly sorts the words and outputs them as a comma-separated string. However, it doesn't handle extra spaces around commas effectively and lacks input validation.  Add error handling for invalid input (e.g., empty input, non-comma-separated input).
+- Challenge 2: The `longest_word` function works correctly for simple sentences. But it fails to handle punctuation correctly within words as per the requirements. It splits words at spaces, ignoring punctuation that should be considered part of the words. Improve the function to accurately identify the longest word including internal punctuation.
+- Both Challenges: Add comments to explain the purpose of each section of the code, making it more understandable.  Choose more descriptive variable names (e.g., instead of `words`, use `input_words`).
+- Challenge 2: Add docstrings to the function explaining parameters, return value, and functionality. This is a crucial aspect of readability and maintainability.
+Brief justification:
+- correctness: Challenge 1 mostly achieves the goal of sorting and outputting words.  However, it lacks robust error handling and doesn't handle spaces perfectly. Challenge 2 partially solves the longest-word problem but is flawed in its handling of punctuation within words, deviating from the chapter's requirement that punctuation should be part of the word.  Therefore, a score of 80% reflects the partial correctness.
+- readability: The code is somewhat readable, but improvements are needed. More descriptive variable names and comments would greatly enhance readability.  The lack of docstrings in Challenge 2 reduces the overall readability score. The structure is functional but could benefit from clearer organization and comments.
+- performance: The code's performance is efficient for the tasks. The sorting and string manipulation operations are done using built-in Python functions that are optimized. The use of built-in functions like `sorted()` and `.join()` contributes to good performance. 
+- security: There are no security vulnerabilities in the provided code. The code only interacts with user input and performs string manipulations; there are no external data sources or sensitive operations involved.
+
