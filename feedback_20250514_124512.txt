@@ -1,0 +1,13 @@
+URL: https://github.com/Midoirl/DI-BOOTCAMP2025/blob/main/D3_daily_challenge.py
+suggestions for improvement:
+- In Challenge 1, add a comment explaining the purpose of `enumerate`.
+- In Challenge 2, consider using a more descriptive variable name than `list_affordable` (e.g., `affordable_items`).
+- In Challenge 2,  add error handling for cases where the price string is not properly formatted (e.g., contains non-digit characters other than $, or ,).
+- Challenge 2's performance could be slightly improved by avoiding repeated string manipulation within the loop.  Pre-process the `items_purchase` dictionary to remove '$' and ',' from prices before the loop.
+- Add docstrings to both functions to explain their purpose, parameters, and return values.
+Brief justification:
+- correctness: Both challenges are implemented correctly. Challenge 1 accurately creates the dictionary with indices as required by the prompt. Challenge 2 correctly cleans the price strings, converts them to integers, compares to the wallet amount, and returns the sorted list of affordable items or "Nothing" as specified.  The code's output matches the examples provided in the chapter content.
+- readability: The code is well-structured and easy to follow. Variable names are mostly clear, and the logic is straightforward.  Minor improvements in variable naming and comments would enhance readability further.
+- performance: The code's performance is acceptable for small inputs. However, in Challenge 2, the repeated string manipulation inside the loop (`price.replace('$', '').replace(',', '')`) could be inefficient for very large dictionaries. Optimizations, such as pre-processing the dictionary, would improve performance for large datasets.
+- security: There are no apparent security vulnerabilities in the code.  The code only uses user input to determine the word in challenge 1 and doesn't interact with any external resources or handle sensitive data, minimizing security concerns.
+

@@ -1,0 +1,18 @@
+URL: https://github.com/Midoirl/DI-BOOTCAMP2025/blob/main/D2_exercise.py
+suggestions for improvement:
+- **Exercise 1:** The solution uses `update` multiple times which isn't strictly necessary.  A more direct approach would be to create `our_fav_numbers` using the union operator directly (`my_fav_numbers | friend_fav_numbers`).
+- **Exercise 2:** The exercise intends to demonstrate the immutability of tuples. The code circumvents this by creating a new tuple.  A better solution would be to explain why appending directly to a tuple isn't possible.
+- **Exercise 3:** The code correctly implements list manipulation.  No major improvements needed.
+- **Exercise 4:** The code generates the list as requested.  Consider adding a comment explaining the logic of checking `i == int(i)` for detecting integers.
+- **Exercise 5:** The code is functional, but the second loop could be optimized to iterate through only even indices for better efficiency.  Also consider using `range(0, 21, 2)` to directly iterate over even numbers.
+- **Exercise 6:**  The code functions correctly. It's fine.
+- **Exercise 7:** The code is well-structured and clearly handles both cases (favorite fruit and new fruit).
+- **Exercise 8:** The code accurately calculates the total pizza price.  However, consider using a more descriptive variable name instead of `state`.
+- **Exercise 9:** The code correctly calculates the total ticket cost. The bonus part is correctly implemented.
+- **Exercise 10:** The removal of 'Pastrami' from `sandwich_orders` within the loop leads to issues if there are multiple 'Pastrami' entries.  Iterating through a copy of the list or using a `while` loop condition that explicitly checks for 'Pastrami' would resolve this.  Also, `finished_sandwiches` is appended with a list containing the remaining sandwich orders instead of each sandwich individually.
+Brief justification:
+- correctness: Most exercises are correctly implemented.  However, there are minor flaws in the logic or efficiency of a few (Exercises 1, 2, 5, and 10), which reduces the overall correctness score.  The code mostly aligns with the instructions, but not perfectly.  Specific examples mentioned in feedback.
+- readability: The code is generally readable with clear variable names and comments.  Some improvements are possible (see feedback), such as using more concise or idiomatic approaches.
+- performance: The code is efficient for most exercises.  However, in Exercise 5, the second loop could be optimized and, in exercise 10, the loop for removing 'Pastrami' is inefficient. Exercise 4 also has a slightly suboptimal approach to float generation.
+- security: The code doesn't present any security vulnerabilities as it's focused on basic data structures and input/output operations. No user input sanitization is necessary for the given tasks.
+
