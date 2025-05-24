@@ -1,0 +1,12 @@
+URL: https://github.com/Midoirl/DI-BOOTCAMP2025/blob/main/W2/D4/daily_challenge_.py
+suggestions for improvement:
+- In `word_frequency`, consider returning 0 instead of a string when the word is not found.  This would maintain consistency with the count return type.
+- The `remove_stop_words` method uses a very limited set of stop words. A more comprehensive list should be used for better results. Consider loading stopwords from a file or using an established library like NLTK.
+- The performance of `most_common_word` could be improved by using the `collections.Counter` object, which is optimized for counting word frequencies.
+- Add error handling to the `from_file` method to gracefully handle cases where the file does not exist or is not readable.
+Brief justification:
+- correctness: The code largely fulfills the requirements outlined in the chapter content.  All requested methods are implemented in the `Text` and `TextModification` classes. The functionality of word counting, finding the most common word, identifying unique words, and file reading works as expected.  The only minor deviation is the non-numeric return in `word_frequency` when a word is not found, and the use of a minimal stop word list, making the stopword removal less effective. The class inheritance is correctly implemented.
+- readability: The code is generally well-structured and easy to understand.  Method names are descriptive, and the code is well-commented. However, the limited stopword list in `remove_stop_words` could be improved for clarity and understandability. A more comprehensive list would improve understanding of the code's full functionality.
+- performance: The `most_common_word` method's time complexity could be improved by using a more efficient data structure (collections.Counter) for frequency counting.  The current implementation has a time complexity of O(n*m) (where n is the number of words and m is the average word length) for the iterative approach of finding the most frequent words. The use of regular expressions in `remove_special_characters` is generally efficient. File reading is handled efficiently using the `with` statement.
+- security: The code does not have any apparent security vulnerabilities. File handling is done safely using the `with` statement, preventing resource leaks.  No external input is directly used in a way that could lead to vulnerabilities (such as SQL injection or command injection).
+
