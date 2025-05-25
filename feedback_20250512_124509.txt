@@ -1,0 +1,12 @@
+URL: https://github.com/Midoirl/DI-BOOTCAMP2025/blob/main/D2%3Adailychallenge.py
+suggestions for improvement:
+- **Challenge 1:** The code for Challenge 1 correctly generates a list of multiples, but it doesn't handle potential errors (e.g., non-integer input).  It should include error handling (e.g., `try-except` blocks) to gracefully handle invalid input.  The variable names could be more descriptive. The logic could be simplified to directly calculate each multiple without repeatedly adding the number.
+- **Challenge 2:** The solution to Challenge 2 does not correctly remove *consecutive* duplicate letters. It removes all duplicates, not just consecutive ones. The problem statement clearly specifies 'consecutive' duplicates. The use of a list and then joining it back into a string is inefficient for this specific task. A more elegant approach would be to build the string iteratively.
+- Improve variable names for better readability (e.g., `number` could be `base_number`, `length` could be `num_multiples`).
+- Add comments to clarify the logic in each step for improved understanding.
+Brief justification:
+- correctness: Challenge 1's code produces correct output for valid integer inputs, fulfilling a part of the requirement. However, it lacks error handling for non-integer inputs as specified in the challenge. Challenge 2's code fails to meet the core requirement of removing only *consecutive* duplicate letters; it removes all duplicates.  This significantly deviates from the problem's description.
+- readability: The code is understandable but could be improved by using more descriptive variable names and adding comments to explain the logic, especially in the loop for Challenge 1. The Challenge 2 solution would be greatly enhanced by adding more detailed comments explaining the logic.
+- performance: The performance of Challenge 1 is reasonable for small inputs, but it's not optimal. Repeated addition is less efficient than direct multiplication.  Challenge 2, while functioning in a limited sense, uses unnecessary list creation and joining making it less efficient than a more direct string manipulation approach.  It is O(n), but O(1) space could be achieved.
+- security: The code doesn't have any obvious security vulnerabilities.  The program only takes user input and performs simple calculations; there's no interaction with external resources or sensitive data.
+
