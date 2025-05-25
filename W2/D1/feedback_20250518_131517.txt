@@ -1,0 +1,14 @@
+URL: https://github.com/Midoirl/DI-BOOTCAMP2025/blob/main/W2/D1/OOP.py
+suggestions for improvement:
+- In `find_oldest_cat`, the initial assignment of `oldest_cat` to `cat1` is unnecessary and can be simplified.  The loop already handles finding the oldest cat.
+- The `jump()` method in the `Dog` class should have `self` as the first argument, not `dog`.
+- The `bark()` method in the `Dog` class should have `self` as the first argument, not `dog`.
+- In Exercise 2, the code doesn't explicitly compare dog sizes; it only prints their attributes. Add a comparison.
+- The `get_groups` method in the `Zoo` class filters out groups with only one animal. This contradicts the instructions; it should print *all* groups.
+- The `sort_animals()` method in the Zoo class could be made more concise by using the `itertools.groupby` method for grouping by first letter
+Brief justification:
+- correctness: The code largely fulfills the requirements. Exercise 1 correctly identifies the oldest cat. Exercise 2 correctly creates and uses the `Dog` class, although the size comparison is missing. Exercise 3 correctly implements the `Song` class. Exercise 4 mostly implements the `Zoo` class, but the `get_groups()` method filters the output which deviates from requirements. The overall correctness is high but lacks full implementation in some areas.
+- readability: The code is generally readable with clear variable names and comments. Some minor improvements in structure and method naming could enhance readability. For example, consistent use of `self` in methods and more descriptive variable names. The code could be improved by following PEP 8 style guidelines for better spacing and consistency. 
+- performance: The code's performance is efficient for the given tasks. The algorithms used are straightforward and have a time complexity suitable for the data sizes involved. The sorting in `sort_animals()` is optimal for the task. There are no obvious performance bottlenecks.
+- security: There are no apparent security vulnerabilities in the provided code.  It operates only on the provided data and doesn't interact with external systems or handle user input which could introduce security risks.
+
