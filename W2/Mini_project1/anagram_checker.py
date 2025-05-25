@@ -1,5 +1,3 @@
-import tkinter as tk
-from tkinter import messagebox
 import os
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
