@@ -1,0 +1,15 @@
+URL: URL: https://github.com/Midoirl/DI-BOOTCAMP2025/blob/main/W2/D2/OOP+And+Modules.py
+suggestions for improvement:
+- Failed to download file - Status: 404
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Midoirl/DI-BOOTCAMP2025/blob/main/W2/D2/func.py
+suggestions for improvement:
+- Failed to download file - Status: 429
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Midoirl/DI-BOOTCAMP2025/blob/main/W2/D2/exercise_one.py
+suggestions for improvement:
+- Failed to download file - Status: 404
+Correctness: N/A%
+-----
